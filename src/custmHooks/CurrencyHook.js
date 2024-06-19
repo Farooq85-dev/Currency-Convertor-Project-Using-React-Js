@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function useCurrencyHook(currency) {
   const [data, setData] = useState({});
@@ -6,9 +6,8 @@ function useCurrencyHook(currency) {
     fetch(() => {
       `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@2024-03-06/v1/currencies/${currency}.json`;
     })
-      .then((res) => res.json())
-      .then(() => setData(res[currency]))
-      .catch((err) => console.log(err));
+      .then((res) => console.log(res))
+      .then(() => setData(res[currency]));
   }, [currency]);
 
   console.log(data);

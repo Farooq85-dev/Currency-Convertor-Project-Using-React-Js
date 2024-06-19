@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$textColor: #eee7ce;
+$btnBg: #35374b;
+$btnBgHover: #272837;
+
+* {
+  font-family: Kanit !important;
+  font-weight: normal !important;
+}
+
+body {
+  background-image: url(../src/assets/bg-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mainWelcome,
+.mainCurrency {
+  .welcomeContainer,
+  .currencyContainer {
+    background-color: rgb(178, 178, 178);
+    flex-direction: column;
+    gap: 20px;
+  }
+}

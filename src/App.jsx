@@ -1,9 +1,11 @@
-import React from "react";
+import { RouterCmp } from "./exprts&imports";
 
-export default function App() {
+function App() {
   return (
     <div>
-      <h1 className="text-fuchsia-200">Muhammad Farooq</h1>
+      <RouterCmp />
     </div>
   );
 }
+
+export default RouterCmp;
